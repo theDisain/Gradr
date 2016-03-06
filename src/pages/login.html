@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+        <div class="medium-6 medium-centered large-4 large-centered columns">
+            <form data-abide style="margin-top:25%;" id="loginForm">
+                <div class="row column log-in-form">
+                    <h4 class="text-center">Log in to Gradr</h4>
+                    <label>Email
+                        <input type="email" id="loginEmail" placeholder="Log in using e-mail" required pattern="\d+">
+                    </label>
+                    <label>Password
+                        <input type="password" id="loginPassword" placeholder="Password">
+                    </label>
+                    <p><a type="submit" id="loginSubmit" class="button expanded">Log In</a></p>
+                    <p class="text-center"><a href="#" id="forgotPassword" data-open="forgotPasswordModal">Forgot your password?</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div id="forgotPasswordModal" class="small reveal" data-reveal aria-labelledby="frgtPwdPlaceholder" aria-hidden="true" role="dialog">
+    <div>
+        <h4 class="text-center" id="modalTitle">Hey</h2>
+        <p class="text-center">We don't actually have a database to hold any users.</p>
+        <p class="text-center">So, basicaly.. You can put anything you want in to the forms and simply continue. :=)</p>
+    </div>
+</div>
