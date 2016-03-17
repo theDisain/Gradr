@@ -5,13 +5,16 @@
                 <div class="row column log-in-form">
                     <h4 class="text-center">Log in to Gradr</h4>
                     <label>Email
-                        <input type="email" id="loginEmail" placeholder="Log in using e-mail" required pattern="\d+">
+                        <input type="email" id="loginEmail" placeholder="Log in using e-mail">
                     </label>
                     <label>Password
-                        <input type="password" id="loginPassword" placeholder="Password">
+                        <input type="password" id="loginPassword" placeholder="Password" required pattern=".{8,}">
                     </label>
-                    <p><a type="submit" id="loginSubmit" class="button expanded">Log In</a></p>
+                    <p>
+                        <input type="submit" id="login" class="button expanded" value="log in" />
+                    </p>
                     <p class="text-center"><a href="#" id="forgotPassword" data-open="forgotPasswordModal">Forgot your password?</a></p>
+                    <p class="text-center"><a href="#" id="register" data-open="registerAccountModal">Click to register</a></p>
                 </div>
             </form>
         </div>
@@ -23,4 +26,32 @@
         <p class="text-center">We don't actually have a database to hold any users.</p>
         <p class="text-center">So, basicaly.. You can put anything you want in to the forms and simply continue. :=)</p>
     </div>
+</div>
+<div id="registerAccountModal" class="small reveal" data-reveal aria-labelledby="rgrAcctPlaceholder" aria-hidden="true" role="dialog">
+    <div>
+    <form data-abide id="registerForm">
+        <div class="row column log-in-form">
+            <h4 class="text-center">Register</h4>
+        <label>Email
+            <input type="email" id="setEmail" placeholder="Enter your e-mail address">
+        </label>
+        <label>Password
+            <input type="password" id="setPassword" placeholder="Set your password" required pattern=".{8,}">
+        </label>
+        <label>Select your role
+            <select id="selectRole" placeholder="Select your role">
+                <option>Student</option>
+                <option>Teacher</option>
+            </select>
+        </label>
+        <p>
+            <input type="submit" id="login" class="button expanded" value="Register" />
+            <a href="#" id="cancelRegisterBtn" class="cancel-button">Cancel</a>
+        </p>
+    </div>
+    </form>
+</div>
+</div>
+<div id="thankYouForRegisteringModal" class="small reveal" aria-hidden="true" role="dialog">
+    <div>thank you for registering</div>
 </div>
