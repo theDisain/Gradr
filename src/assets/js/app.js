@@ -6,6 +6,9 @@ $('#forgotPassword').click(function () {
 $('#cancelRegisterBtn').click(function () {
     $('#registerAccountModal').foundation('close');
 });
+$('#redirectToLoginPageBtn').click(function () {
+    $('#thankYouForRegisteringModal').foundation('close');
+});
 
 $('#loginForm').submit(function (e) {
     e.preventDefault();
@@ -14,7 +17,6 @@ $('#loginForm').submit(function (e) {
 });
 $('#registerForm').submit(function (e) {
     e.preventDefault();
-    $('#registerAccountModal').foundation('close');
-    $('#thankYouForRegisteringModal').foundation('open');
+    document.location = 'main.html';
     return false;
 });

@@ -140,3 +140,13 @@ $logo-margin: - ($logo-width / 2);
         $style:solid
     );
 }
+.exit-modal-button {
+    @include button(
+        $expand:false,
+        $background: $primary-color,
+        $background-hover:auto,
+        $color:auto,
+        $style:solid
+    );
+    float:right;
+}
