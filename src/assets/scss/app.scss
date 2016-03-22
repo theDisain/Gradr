@@ -76,7 +76,7 @@ $header-color-notice: #ff9800;
 /* Variables */
 
 // Adjust width accordingly (use even #'s)
-$logo-width: 118px;
+$logo-width: 53px;
 // Reduce px value to increase space between logo and menu text
 $logo-padding: $logo-width - 32px; 
 // Leave alone
@@ -149,4 +149,100 @@ $logo-margin: - ($logo-width / 2);
         $style:solid
     );
     float:right;
+}
+
+#upload{
+    width:300px;
+    border-radius:3px;
+
+    margin-top:25%;
+}
+
+#drop{
+    padding:70px 85px;
+    border: 10px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    text-transform: uppercase;
+
+    font-size:16px;
+    font-weight:bold;
+    color:#7f858a;
+}
+
+#drop a{
+    @include button(  
+        $expand:false,
+        $background: $primary-color,
+        $background-hover:auto,
+        $color:auto,
+        $style:solid
+        );
+
+    cursor:pointer;
+    display:auto;
+    margin-top:12px;
+    line-height:1;
+}
+
+#drop a:hover{
+    background-color:$primary-color;
+}
+
+#drop input{
+    display:none;
+}
+
+#upload ul{
+    list-style:none;
+    margin-top:20px;
+}
+
+#upload ul li{
+
+    border-top:1px solid #3d4043;
+    border-bottom:1px solid #2b2e31;
+    height: 60px;
+    position: relative;
+}
+
+#upload ul li input{
+    display: none;
+}
+
+#upload ul li p{
+    margin-top:auto;
+    padding:10px;
+    color: #EEE;
+    font-size: 16px;
+    font-weight: bold;
+    display:inline-block;
+}
+
+#upload ul li i{
+    font-weight: normal;
+    font-style:normal;
+    color:#7f7f7f;
+    display:block;
+}
+
+
+
+#upload ul li span{
+    width: 15px;
+    height: 12px;
+    background: url('../img/icons.png') no-repeat;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    cursor:pointer;
+}
+
+#upload ul li.working span{
+    height: 16px;
+    background-position: 0 -12px;
+}
+
+#upload ul li.error p{
+    color:red;
+    display:inline-block;
 }
