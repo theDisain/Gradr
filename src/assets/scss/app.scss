@@ -76,7 +76,7 @@ $header-color-notice: #ff9800;
 /* Variables */
 
 // Adjust width accordingly (use even #'s)
-$logo-width: 53px;
+$logo-width: 63px;
 // Reduce px value to increase space between logo and menu text
 $logo-padding: $logo-width - 32px; 
 // Leave alone
@@ -84,19 +84,30 @@ $logo-margin: - ($logo-width / 2);
 
 /* Small Navigation */
 
+#nav-menu{
+  background-color: $primary-color-light;
+}
+#nav-menu ul a{
+  background-color: $primary-color-light;
+  color:$primary-text-color;
+}
+
 .logo-small {
   float: right;
 }
 .title-bar {
   padding: 0 .5rem;
+  background-color: $primary-color-light;
+  color:$primary-text-color;
 }
 
 .menu-icon,
 .title-bar-title {
-
   position: relative;
-
   top: 10px;
+}
+.menu-icon{
+    background-color: $primary-text-color;
 }
 /* Medium-Up Navigation */
 @media only screen and (min-width: 40rem) { 
@@ -104,7 +115,7 @@ $logo-margin: - ($logo-width / 2);
     position: relative;
     .logo {
       width: $logo-width;
-      height:  92px;
+      height:  53px;
       position: absolute;
       left: 50%;
       right: 50%;
@@ -118,16 +129,43 @@ $logo-margin: - ($logo-width / 2);
     padding-left: $logo-padding;
     ul {
       float: left;
+      .submenu{
+          background-color: $primary-color-light;
+      }
+    }
+    ul li a{
+      background-color: $primary-color-light;
+      color:$primary-text-color;
+    }
+    ul li:hover{
+        background-color: $primary-color;
+        color:white;
+    }
+    ul li a:hover{
+        background-color: $primary-color;
+        color:white;
     }
   }
   
   // Left part
   .top-bar-left {
     width:  50%;
-    padding-right: $logo-padding;
+    padding-right: $logo-padding + 10;
     
     ul {
       float: right;
+    }
+    ul li a{
+      background-color: $primary-color-light;
+      color:$primary-text-color;
+    }
+    ul li:hover{
+        background-color: $primary-color;
+        color:white;
+    }
+    ul li a:hover{
+        background-color: $primary-color;
+        color:white;
     }
   }
 }
@@ -256,3 +294,36 @@ $logo-margin: - ($logo-width / 2);
     color:$header-color-notice;
     display:inline-block;
 }
+
+
+#gradesMenu a{
+    background-color:$primary-color-light;
+    color:$primary-text-color;
+    font-size: 16;
+    text-align:center;
+}
+#gradesMenu a:hover{
+    background-color:$primary-color;
+    color: white;
+    font-size: 16;
+    text-align:center;
+}
+#gradesMenu ul{
+    font-size: 14;
+    text-align:center;
+    color:white;
+}
+#gradesMenu ul li{
+    font-size: 14;
+    text-align:center;
+    color:white;
+}
+#gradesMenu ul li ul li{
+    font-size: 12;
+    text-align:center;
+}
+#searchStudent{
+    margin-top:20px;
+    color:$primary-text-color;
+}
+

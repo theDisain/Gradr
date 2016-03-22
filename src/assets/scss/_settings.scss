@@ -214,7 +214,7 @@ $accordion-content-padding: 1rem;
 // -----------------
 
 $accordionmenu-arrows: true;
-$accordionmenu-arrow-color: $primary-color;
+$accordionmenu-arrow-color: $primary-text-color;
 
 // 9. Badge
 // --------
@@ -314,7 +314,7 @@ $dropdown-sizes: (
 // -----------------
 
 $dropdownmenu-arrows: true;
-$dropdownmenu-arrow-color: $anchor-color;
+$dropdownmenu-arrow-color: $primary-text-color;
 $dropdownmenu-min-width: 200px;
 $dropdownmenu-background: $white;
 $dropdownmenu-border: 1px solid $medium-gray;
@@ -349,7 +349,7 @@ $select-background: $white;
 $select-triangle-color: $dark-gray;
 $select-radius: $global-radius;
 $input-color: $black;
-$input-placeholder-color: $medium-gray;
+$input-placeholder-color: $secondary-text-color;
 $input-font-family: inherit;
 $input-font-size: rem-calc(16);
 $input-background: $white;
