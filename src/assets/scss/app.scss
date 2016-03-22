@@ -169,6 +169,9 @@ $logo-margin: - ($logo-width / 2);
     color:#7f858a;
 }
 
+#drop:hover{
+    background-color:$primary-color;
+}
 #drop a{
     @include button(  
         $expand:false,
@@ -180,7 +183,7 @@ $logo-margin: - ($logo-width / 2);
 
     cursor:pointer;
     display:auto;
-    margin-top:12px;
+    padding-top:6px;
     line-height:1;
 }
 
@@ -195,14 +198,17 @@ $logo-margin: - ($logo-width / 2);
 #upload ul{
     list-style:none;
     margin-top:20px;
+    white-space:nowrap;
+    overflow:hidden;
+    
 }
 
 #upload ul li{
-
     border-top:1px solid #3d4043;
     border-bottom:1px solid #2b2e31;
-    height: 60px;
-    position: relative;
+    height: 70px;
+    white-space:nowrap;
+    overflow:hidden;
 }
 
 #upload ul li input{
@@ -211,11 +217,13 @@ $logo-margin: - ($logo-width / 2);
 
 #upload ul li p{
     margin-top:auto;
-    padding:10px;
+    padding-top:15px;
+    padding-left:5px;
+    padding-right:10px;
     color: #EEE;
     font-size: 16px;
     font-weight: bold;
-    display:inline-block;
+
 }
 
 #upload ul li i{
@@ -228,12 +236,12 @@ $logo-margin: - ($logo-width / 2);
 
 
 #upload ul li span{
-    width: 15px;
-    height: 12px;
     background: url('../img/icons.png') no-repeat;
-    position: absolute;
-    top: 20px;
-    right: 30px;
+    display:inline-block;
+    padding-top:20px;
+    padding-left:20px;
+    height:42px;
+    width:15px;
     cursor:pointer;
 }
 
@@ -243,6 +251,6 @@ $logo-margin: - ($logo-width / 2);
 }
 
 #upload ul li.error p{
-    color:red;
+    color:$header-color-notice;
     display:inline-block;
 }

@@ -17,9 +17,12 @@ $(function(){
         add: function (e, data) {
             var tpl = $('<li class="working"><input type="text" value="0" data-width="52" data-height="52"'+
                 ' data-fgColor="#0788a5" data-readOnly="1" data-bgColor="#3e4043" /><p></p><span></span></li>');
-
+                var fileName = data.files[0].name
+            if(fileName.length >= 20){
+                fileName = fileName.substring(0,20) + "..";
+            }
             // Append the file name and file size
-            tpl.find('p').text(data.files[0].name)
+            tpl.find('p').text(fileName)
                          .append('<i>' + formatFileSize(data.files[0].size) + '</i>');
 
             // Add the HTML to the UL element
