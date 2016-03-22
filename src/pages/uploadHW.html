@@ -1,0 +1,57 @@
+<!-- Small Navigation -->
+<div class="title-bar" data-responsive-toggle="nav-menu" data-hide-for="medium">
+    <a class="logo-small show-for-small-only" href="main.html"><img src="../assets/img/test-logo.png" /></a>
+    <button class="menu-icon" type="button" data-toggle></button>
+    <div class="title-bar-title">Menu</div>
+</div>
+<!-- Medium-Up Navigation -->
+<nav class="top-bar" id="nav-menu">
+    <div class="logo-wrapper hide-for-small-only">
+        <a class="logo" href="main.html">
+            <img src="../assets/img/test-logo.png">
+        </a>
+    </div>
+
+    <!-- Left Nav Section -->
+    <div class="top-bar-left">
+        <ul class="vertical medium-horizontal menu">
+            <li><a href="uploadHW.html">Upload</a></li>
+            <li><a href="gradingTable.html">Grades</a></li>
+        </ul>
+    </div>
+
+    <!-- Right Nav Section -->
+    <div class="top-bar-right">
+        <ul class="vertical medium-horizontal dropdown menu" data-dropdown-menu>
+            <li class="has-submenu">
+                <a href="#">Settings</a>
+                <ul class="submenu menu vertical medium-horizontal" data-submenu>
+                    <li><a href="#">View your profile</a></li>
+                    <li><a href="#">Change your profile info</a></li>
+                    <li><a href="#">Change your privacy settings</a></li>
+                    <li><a href="#">Change your password</a></li>
+                </ul>
+            </li>
+            <li class="has-submenu">
+                <a href="login.html">Log out</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="row">
+    <div class="medium-6 medium-centered large-3 large-centered columns">
+        <form id="upload" method="post" action="upload.php" enctype="multipart/form-data">
+            <div id="drop">
+                Drop Here
+                <p class="header-notice">Or</p>
+                <a id="uploadFile">Browse</a>
+                <input type="file" name="upl" multiple />
+            </div>
+
+            <ul>
+                <!-- The file uploads will be shown here -->
+            </ul>
+
+        </form>
+    </div>
+</div>
