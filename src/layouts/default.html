@@ -16,16 +16,26 @@
     {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}} {{> body}}
 
     <script src="{{root}}assets/js/app.js"></script>
-    {{#ifpage 'uploadHW'}}
-        <script src="{{root}}assets/js/upload-file/jquery.knob.js"></script>
+    {{#ifpage 'uploadTask'}}
+    <script src="{{root}}assets/js/upload-file/jquery.knob.js"></script>
 
-		<!-- jQuery File Upload Dependencies -->
-		<script src="{{root}}assets/js/upload-file/jquery.ui.widget.js"></script>
-		<script src="{{root}}assets/js/upload-file/jquery.iframe-transport.js"></script>
-		<script src="{{root}}assets/js/upload-file/jquery.fileupload.js"></script>
+    <!-- jQuery File Upload Dependencies -->
+    <script src="{{root}}assets/js/upload-file/jquery.ui.widget.js"></script>
+    <script src="{{root}}assets/js/upload-file/jquery.iframe-transport.js"></script>
+    <script src="{{root}}assets/js/upload-file/jquery.fileupload.js"></script>
 
-		<!-- Our main JS file -->
-		<script src="{{root}}assets/js/upload-file/script.js"></script>
+    <!-- Our main JS file -->
+    <script src="{{root}}assets/js/upload-file/script.js"></script>
+    {{/ifpage}} {{#ifpage 'uploadHW'}}
+    <script src="{{root}}assets/js/upload-file/jquery.knob.js"></script>
+
+    <!-- jQuery File Upload Dependencies -->
+    <script src="{{root}}assets/js/upload-file/jquery.ui.widget.js"></script>
+    <script src="{{root}}assets/js/upload-file/jquery.iframe-transport.js"></script>
+    <script src="{{root}}assets/js/upload-file/jquery.fileupload.js"></script>
+
+    <!-- Our main JS file -->
+    <script src="{{root}}assets/js/upload-file/script.js"></script>
     {{/ifpage}}
 </body>
 

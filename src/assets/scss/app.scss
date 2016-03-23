@@ -63,7 +63,9 @@ $form-padding: $global-padding;
 $form-radius: $global-radius;
 $header-color-notice: #ff9800;
 
-
+#login{
+    color:$primary-text-color;
+}
 .log-in-form {
 //  border: 1px solid $form-border-color;
 //  padding: $form-padding;
@@ -197,13 +199,15 @@ $logo-margin: - ($logo-width / 2);
     width:300px;
     border-radius:3px;
 
-    margin-top:40%;
+    margin-top:20%;
     margin-right:auto;
     margin-left:auto;
 }
-
+.right-side-box{
+    display:inline-block;
+}
 #drop{
-    padding:70px 85px;
+    padding:65px 85px;
     border: 10px solid rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     text-transform: uppercase;
@@ -221,7 +225,7 @@ $logo-margin: - ($logo-width / 2);
         $expand:false,
         $background: $primary-color,
         $background-hover:auto,
-        $color:auto,
+        $color:$primary-text-color,
         $style:solid
         );
 
@@ -233,6 +237,7 @@ $logo-margin: - ($logo-width / 2);
 
 #drop a:hover{
     background-color:$primary-color;
+    color:white;
 }
 
 #drop input{
@@ -241,7 +246,7 @@ $logo-margin: - ($logo-width / 2);
 
 #upload ul{
     list-style:none;
-    margin-top:20px;
+    margin-top:5px;
     white-space:nowrap;
     overflow:hidden;
     

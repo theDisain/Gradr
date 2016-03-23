@@ -26,7 +26,7 @@ $(function(){
                          .append('<i>' + formatFileSize(data.files[0].size) + '</i>');
 
             // Add the HTML to the UL element
-            data.context = tpl.appendTo(ul);
+            data.context = tpl.appendTo('#preview');
 
             // Initialize the knob plugin
             tpl.find('input').knob();
@@ -51,8 +51,10 @@ $(function(){
         progress: function(e, data){
 
             // Calculate the completion percentage of the upload
-            var loadedDataInt = parseInt(data.loaded);
-            var progress = loadedDataInt / parseInt(data.total) * 100;
+            var loadedDataInt = data.loaded;
+            var loadedDataStr = loadedDataInt.toString();
+            var totalData = data.total * 100;
+            var progress = parseInt(loadedDataInt/totalData,10);
 
             // Update the hidden input field and trigger a change
             // so that the jQuery knob plugin knows to update the dial

@@ -1,7 +1,6 @@
-
 <!-- Small Navigation -->
 <div class="title-bar" data-responsive-toggle="nav-menu" data-hide-for="medium">
-    <a class="logo-small show-for-small-only" href="#"><img src="assets/img/test-logo.png" /></a>
+    <a class="logo-small show-for-small-only" href="main.html"><img src="assets/img/test-logo.png" /></a>
     <button class="menu-icon" type="button" data-toggle></button>
     <div class="title-bar-title">Menu</div>
 </div>
@@ -16,8 +15,8 @@
     <!-- Left Nav Section -->
     <div class="top-bar-left">
         <ul class="vertical medium-horizontal menu">
-            <li><a href="uploadHW.html">Upload</a></li>
-            <li><a href="gradingTableStudent.html">Grades</a></li>
+            <li><a href="uploadTask.html">Upload</a></li>
+            <li><a href="gradingTable.html">Grades</a></li>
         </ul>
     </div>
 
@@ -39,3 +38,28 @@
         </ul>
     </div>
 </nav>
+<div class="row">
+    <div class="medium-6 medium-centered large-3 large-centered columns">
+        <form id="upload" method="post" action="upload.php" enctype="multipart/form-data">
+            <div id="drop">
+                Drop Here
+                <p class="header-notice">Or</p>
+                <a id="uploadFile">Browse</a>
+                <input type="file" name="upl" multiple />
+            </div>
+
+            <ul id="preview">
+                <!-- The file uploads will be shown here -->
+            </ul>
+            <ul>
+                <label for="assignmentDescription">Description
+                    <textarea name="assignmentDescription" id="assignmentDescription" cols="32" rows="8" placeholder="Write content here."></textarea>
+                </label>
+            </ul>
+            <div>
+                <input type="submit" id="submitForm" class="button" value="submit">
+            </div>
+
+        </form>
+    </div>
+</div>
