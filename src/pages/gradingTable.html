@@ -1,13 +1,13 @@
 <!-- Small Navigation -->
 <div class="title-bar" data-responsive-toggle="nav-menu" data-hide-for="medium">
-    <a class="logo-small show-for-small-only" href="#"><img src="assets/img/test-logo.png" /></a>
+    <a class="logo-small show-for-small-only" href="mainTeacher.html"><img src="assets/img/test-logo.png" /></a>
     <button class="menu-icon" type="button" data-toggle></button>
     <div class="title-bar-title">Menu</div>
 </div>
 <!-- Medium-Up Navigation -->
 <nav class="top-bar" id="nav-menu">
     <div class="logo-wrapper hide-for-small-only">
-        <a class="logo" href="main.html">
+        <a class="logo" href="mainTeacher.html">
             <img src="assets/img/test-logo.png">
         </a>
     </div>
@@ -16,7 +16,7 @@
     <div class="top-bar-left">
         <ul class="vertical medium-horizontal menu">
             <li><a href="uploadTask.html">Upload</a></li>
-            <li><a href="gradingTable.html">Results</a></li>
+            <li><a href="gradingTable.html">Grades</a></li>
         </ul>
     </div>
 
@@ -24,18 +24,29 @@
     <div class="top-bar-right">
         <ul class="vertical medium-horizontal dropdown menu" data-dropdown-menu>
             <li class="has-submenu">
-                <a href="#">Settings</a>
+                <a href="#">Other</a>
                 <ul class="submenu menu vertical medium-horizontal" data-submenu>
-                    <li><a href="#">View your profile</a></li>
-                    <li><a href="#">Change your profile info</a></li>
-                    <li><a href="#">Change your privacy settings</a></li>
-                    <li><a href="#">Change your password</a></li>
-                </ul>
+
+                    <li><a href="#">Edit Class</a></li>
+                    <li><a href="#">Edit groups</a></li>
+                    <li><a href="#">Start class</a></li>
+                    <li><a href="#">Add group</a></li>
+                    <ul class="vertical medium-horizontal dropdown menu" data-dropdown-menu>
+                        <li class="has-submenu">
+                            <a href="#">Settings</a>
+                            <ul class="submenu menu vertical medium-horizontal" data-submenu>
+                                <li><a href="#">View your profile</a></li>
+                                <li><a href="#">Change your profile info</a></li>
+                                <li><a href="#">Change your privacy settings</a></li>
+                                <li><a href="#">Change your password</a></li>
+                            </ul>
+                        </li>
+                    </ul>
             </li>
+            </ul>
             <li class="has-submenu">
                 <a href="login.html">Log out</a>
             </li>
-        </ul>
     </div>
 </nav>
 <!-- Navigation container for grading menu. Options produce a table with the grades of students for the teacher
@@ -43,7 +54,7 @@
 <div class="row">
     <div class="small-6 large-centered columns" id="gradesMenu">
 
-        <ul class="vertical menu" data-accordion-menu>
+        <ul class="vertical menu" id="accordion-menu" data-accordion-menu>
             <li> <a href="#">2016</a>
                 <ul class="menu vertical nested">
                     <li>
