@@ -16,22 +16,13 @@
     <div class="top-bar-left">
         <ul class="vertical medium-horizontal menu">
             <li><a href="uploadHW.html">Upload</a></li>
-            <li><a href="gradingTable.html">Grades</a></li>
+            <li><a href="gradingTableStudent.html">Grades</a></li>
         </ul>
     </div>
 
     <!-- Right Nav Section -->
     <div class="top-bar-right">
         <ul class="vertical medium-horizontal dropdown menu" data-dropdown-menu>
-            <li class="has-submenu">
-                <a href="#">Settings</a>
-                <ul class="submenu menu vertical medium-horizontal" data-submenu>
-                    <li><a href="#">View your profile</a></li>
-                    <li><a href="#">Change your profile info</a></li>
-                    <li><a href="#">Change your privacy settings</a></li>
-                    <li><a href="#">Change your password</a></li>
-                </ul>
-            </li>
             <li class="has-submenu">
                 <a href="login.html">Log out</a>
             </li>
@@ -43,31 +34,18 @@
 <div class="row">
     <div class="small-6 large-centered columns" id="gradesMenu">
 
-        <ul class="vertical menu" data-accordion-menu>
+        <ul class="vertical menu" id="accordion-menu" data-accordion-menu>
             <li> <a href="#">2016</a>
                 <ul class="menu vertical nested">
                     <li>
                         <a href="#">Machine Learning</a>
                         <ul class="menu vertical nested">
-                            <li><a href="#" id="mLearningTable">Excercise 1</a></li>
-                            <li><a href="#" id="mLearningTotal">Total</a></li>
+                            <li>
+                                <a href="#" id="mLearningTable" class="accordionMenuButton">Excercise 1</a>
+                            </li>
                         </ul>
                     </li>
-                    <li><a href="#">Probability and Mathemathical Statistics</a>
-                        <ul class="menu vertical nested">
-                            <li><a href="#" id="probTest1">Test 1</a></li>
-                            <li><a href="#" id="probTest2">Test 2</a></li>
-                            <li><a href="#" id="probTotal">Total</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">User Experience</a>
-                        <ul class="menu vertical nested">
-                            <li><a href="#" id="uxFirst">Prototyping an UI </a></li>
-                            <li><a href="#" id="uxSecond">Ajax and Other stuff </a></li>
-                            <li><a href="#" id="uxThird">Total</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Total</a></li>
+                    <li><a href="#" class="accordionMenuButton">Total</a></li>
                 </ul>
             </li>
         </ul>

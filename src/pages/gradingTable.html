@@ -24,29 +24,9 @@
     <div class="top-bar-right">
         <ul class="vertical medium-horizontal dropdown menu" data-dropdown-menu>
             <li class="has-submenu">
-                <a href="#">Other</a>
-                <ul class="submenu menu vertical medium-horizontal" data-submenu>
-
-                    <li><a href="#">Edit Class</a></li>
-                    <li><a href="#">Edit groups</a></li>
-                    <li><a href="#">Start class</a></li>
-                    <li><a href="#">Add group</a></li>
-                    <ul class="vertical medium-horizontal dropdown menu" data-dropdown-menu>
-                        <li class="has-submenu">
-                            <a href="#">Settings</a>
-                            <ul class="submenu menu vertical medium-horizontal" data-submenu>
-                                <li><a href="#">View your profile</a></li>
-                                <li><a href="#">Change your profile info</a></li>
-                                <li><a href="#">Change your privacy settings</a></li>
-                                <li><a href="#">Change your password</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-            </li>
-            </ul>
-            <li class="has-submenu">
                 <a href="login.html">Log out</a>
             </li>
+        </ul>
     </div>
 </nav>
 <!-- Navigation container for grading menu. Options produce a table with the grades of students for the teacher
@@ -60,25 +40,10 @@
                     <li>
                         <a href="#">Machine Learning</a>
                         <ul class="menu vertical nested">
-                            <li><a href="#" id="mLearningTable">Excercise 1</a></li>
-                            <li><a href="#" id="mLearningTotal">Total</a></li>
+                            <li><a href="#" id="mLearningTable" class = "accordionMenuButton">Excercise 1</a></li>
+                            <li><a href="#" id="mLearningTotal" class = "accordionMenuButton">Total</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Probability and Mathemathical Statistics</a>
-                        <ul class="menu vertical nested">
-                            <li><a href="#" id="probTest1">Test 1</a></li>
-                            <li><a href="#" id="probTest2">Test 2</a></li>
-                            <li><a href="#" id="probTotal">Total</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">User Experience</a>
-                        <ul class="menu vertical nested">
-                            <li><a href="#" id="uxFirst">Prototyping an UI </a></li>
-                            <li><a href="#" id="uxSecond">Ajax and Other stuff </a></li>
-                            <li><a href="#" id="uxThird">Total</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#" id="totalGrade">Total</a></li>
                 </ul>
             </li>
         </ul>
@@ -88,4 +53,12 @@
 </div>
 <div>
     <table class='hover' id="providerTable"></table>
+</div>
+<div id="submitGradeModal" class="small reveal" data-reveal aria-labelledby="submitGradeModal" aria-hidden="true" role="dialog">
+    <div>
+        <h4 class="text-center" id="modalTitle">Grades updated!</h4>
+        <p class="text-center">Good job!</p>
+        <button class="close-button" data-close aria-label="Close reveal" type="button">
+        
+    </div>
 </div>

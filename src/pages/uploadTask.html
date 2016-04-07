@@ -24,29 +24,9 @@
     <div class="top-bar-right">
         <ul class="vertical medium-horizontal dropdown menu" data-dropdown-menu>
             <li class="has-submenu">
-                <a href="#">Other</a>
-                <ul class="submenu menu vertical medium-horizontal" data-submenu>
-
-                    <li><a href="#">Edit Class</a></li>
-                    <li><a href="#">Edit groups</a></li>
-                    <li><a href="#">Start class</a></li>
-                    <li><a href="#">Add group</a></li>
-                    <ul class="vertical medium-horizontal dropdown menu" data-dropdown-menu>
-                        <li class="has-submenu">
-                            <a href="#">Settings</a>
-                            <ul class="submenu menu vertical medium-horizontal" data-submenu>
-                                <li><a href="#">View your profile</a></li>
-                                <li><a href="#">Change your profile info</a></li>
-                                <li><a href="#">Change your privacy settings</a></li>
-                                <li><a href="#">Change your password</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-            </li>
-            </ul>
-            <li class="has-submenu">
                 <a href="login.html">Log out</a>
             </li>
+        </ul>
     </div>
 </nav>
 <div class="row">
@@ -73,14 +53,26 @@
                 <!-- The file uploads will be shown here -->
             </ul>
             <div>
+                <label for="startAssignmentDatePick">Assignment start date</label>
+                <input type="text" id="startAssignmentDatePick" data-date-format="dd.mm.yyyy"/>
+                <label for="endAssignmentDatePick">Assignment end date</label>
+                <input type= "text" id="endAssignmentDatePick" data-date-format="dd.mm.yyy"/>
+
+            </div>
+            <div>
                 <label for="assignmentDescription">Description
                     <textarea name="assignmentDescription" id="assignmentDescription" cols="32" rows="8" placeholder="Write content here."></textarea>
                 </label>
             </div>
             <div>
-                <input type="submit" id="submitForm" class="button expanded" value="submit">
+                <input type="submit" id="submitForm" class="button expanded" value="submit" data-open="submitAssignment">
             </div>
 
         </form>
+    </div>
+</div>
+<div id="submitAssignment" class="small reveal" data-reveal aria-labelledby="submitAssignment" aria-hidden="true" role="dialog">
+    <div>
+        <h4 class="text-center" id="modalTitle">Assignment uploaded!</h2>
     </div>
 </div>

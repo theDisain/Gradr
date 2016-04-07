@@ -24,6 +24,7 @@ PATHS:
   sass:
     - "bower_components/foundation-sites/scss"
     - "bower_components/motion-ui/src"
+    - "bower_components/foundation-datepicker/css/foundation-datepicker.scss"
   # Paths to JavaScript libraries, which are compined into one file
   javascript:
     # Libraries requried by Foundation
@@ -53,6 +54,7 @@ PATHS:
     - "bower_components/foundation-sites/js/foundation.tabs.js"
     - "bower_components/foundation-sites/js/foundation.toggler.js"
     - "bower_components/foundation-sites/js/foundation.tooltip.js"
+    - "bower_components/foundation-datepicker/js/foundation-datepicker.js"
     # Paths to your own project code are here
     - "src/assets/js/!(app).js"
     - "!src/assets/js/upload-file/**/*"
